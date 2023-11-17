@@ -9,3 +9,24 @@ const TodoAddForm = ({ handleAdd }) => {
         handleAdd(text);
         setText("");
     }
+    return (
+        <form className="AddForm" onSubmit={handleSubmit}>
+            <label>
+                <input
+                    type="text"
+                    onChange={(e) => {
+                        setText(e.target.value);
+                    }}
+                    placeholder="Enter a task todo"
+                    value={text}
+                    minLength="5"
+                    maxLength="30"
+                    required
+                />
+            </label>
+            <button type="submit">Add your Task</button>
+        </form>
+    );
+};
+
+export default TodoAddForm;
