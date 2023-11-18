@@ -20,3 +20,10 @@ return (
             required
           />
         </label>
+ <button type="submit">Save your Changes</button>
+      </form>
+    </>
+  );
+}
+
+export default TodoEdit;
