@@ -5,3 +5,18 @@ function TodoEdit({ todo, onSave }) {
     e.preventDefault();
     onSave(editText);
   }
+return (
+    <>
+      <form className="Editform" onSubmit={handleEditSubmit}>
+        <label>
+          <input
+            type="text"
+            placeholder={todo.text}
+            onChange={(e) => {
+              seteditText(e.target.value);
+            }}
+            minLength="5"
+            maxLength="30"
+            required
+          />
+        </label>
