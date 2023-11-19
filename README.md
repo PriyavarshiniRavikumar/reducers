@@ -6,7 +6,7 @@ to minimize the use of state variables.
 
 ## CRUD, Draggable function
 
-Validation included
+Validation included in Add form
 
 ### to run
 
