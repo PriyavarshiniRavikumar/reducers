@@ -15,3 +15,9 @@ const TodoList = ({
 
     const handleSort = () => {
         let newTodos = [...todos];
+        // const dragItemContent = newTodos.splice(dragItem.current, 1)[0];
+
+        // newTodos.splice(dragOverItem.current, 0, dragItemContent);
+        // dragUpdate(newTodos);
+        dragUpdate(dragItem.current, dragOverItem.current);
+    };
