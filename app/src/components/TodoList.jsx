@@ -30,4 +30,18 @@ const TodoList = ({
         }
         handleDone(id, type);
     }
+    return (
+        <div className="output-wrap">
+            <h1>My todos</h1>
+            {todos.map((t, index) => (
+                <div key={t.id} className="output">
+                    {t.isEdit ? (
+                        <TodoEdit
+                            todo={t}
+                            onSave={(editedText) => {
+                                handleEditing(t.id, editedText);
+                            }}
+                        />
+                    ) : (
+
 
