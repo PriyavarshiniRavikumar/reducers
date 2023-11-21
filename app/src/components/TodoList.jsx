@@ -42,6 +42,22 @@ const TodoList = ({
                                 handleEditing(t.id, editedText);
                             }}
                         />
-                    ) : (
+                    ) : (<div
+                        className="todolist"
+                        draggable
+                        onDragStart={(e) => (dragItem.current = index)}
+                        onDragEnter={(e) => (dragOverItem.current = index)}
+                        onDragEnd={handleSort}
+                    >
+                        <label>
+                            {/* <strong>...</strong> */}
+                            <input
+                                type="checkbox"
+                                name=""
+                                id=""
+                                checked={t.isDone}
+                                onChange={(e) => handleCheck(e, t.id)}
+                            />
+
 
 
