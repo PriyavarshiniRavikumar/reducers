@@ -21,3 +21,13 @@ const TodoList = ({
         // dragUpdate(newTodos);
         dragUpdate(dragItem.current, dragOverItem.current);
     };
+    function handleCheck(e, id) {
+        // console.log(e.target.checked);
+        // console.log(id);
+        let type = "done";
+        if (!e.target.checked) {
+            type = "undone";
+        }
+        handleDone(id, type);
+    }
+
