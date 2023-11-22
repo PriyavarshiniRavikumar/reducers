@@ -64,6 +64,6 @@ const TodoList = ({
                                     <strong>{t.text}</strong>
                                 </span>
                             </label>
-
+                            <button onClick={() => handleDelete(t.id)}>Delete</button>
 
 
