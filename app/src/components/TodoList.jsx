@@ -58,6 +58,12 @@ const TodoList = ({
                                 checked={t.isDone}
                                 onChange={(e) => handleCheck(e, t.id)}
                             />
+                                <span
+                                    style={t.isDone ? { textDecoration: "line-through" } : {}}
+                                >
+                                    <strong>{t.text}</strong>
+                                </span>
+                            </label>
 
 
 
