@@ -65,5 +65,15 @@ const TodoList = ({
                                 </span>
                             </label>
                             <button onClick={() => handleDelete(t.id)}>Delete</button>
+                        <button onClick={() => handleUpdate(t.id)}>Update</button>
+                    </div>
+                    )}
+                </div>
+            ))}
+        </div>
+    );
+};
+
+export default TodoList;
 
 
