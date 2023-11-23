@@ -1,0 +1,7 @@
+﻿.app-wrap {
+    background-image: linear-gradient(to top left, white, rgb(207, 227, 227));
+    margin: 50px auto;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+}
