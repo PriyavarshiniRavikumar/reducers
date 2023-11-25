@@ -14,12 +14,31 @@ h1 {
     margin: 20px auto;
     max-width: 500px;
 }
-    .AddForm button {
+.AddForm button {
         margin-left: 10px;
         border-radius: 5px;
     }
 
-        .AddForm button:hover {
+.AddForm button:hover {
             background-color: beige;
             color: blueviolet;
+    }
+.todolist {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+    .todolist label {
+        text-align: left;
+    }
+
+    .todolist button {
+        margin: 5px 10px;
+        border: 2px ridge blanchedalmond;
+        border-radius: 6px;
+    }
+
+        .todolist button:hover {
+            transform: scale(1.2, 1.2);
+            transition: transform 0.5s;
         }
