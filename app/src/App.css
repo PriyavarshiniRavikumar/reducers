@@ -14,3 +14,12 @@ h1 {
     margin: 20px auto;
     max-width: 500px;
 }
+    .AddForm button {
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+
+        .AddForm button:hover {
+            background-color: beige;
+            color: blueviolet;
+        }
