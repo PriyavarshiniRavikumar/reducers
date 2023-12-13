@@ -3,7 +3,8 @@
 to minimize the use of state variables.
 
 ## use reducer function and dispatch to handle data betweem components
-### Components created using React.Js
+### Components created using React.Js 
+along with Javascript
 
 ## CRUD, Draggable function
 
